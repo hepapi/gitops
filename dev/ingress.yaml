@@ -7,10 +7,10 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: welcome-dev.34.247.16.177.sslip.io
+  - host: rancher.34.247.16.177.sslip.io
     http:
       paths:
-      - path: /
+      - path: /dev
         pathType: Prefix
         backend:
           service:
